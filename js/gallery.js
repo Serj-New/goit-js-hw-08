@@ -99,6 +99,8 @@ const handleImageClick = (event) => {
     },
   );
 
+  document.querySelector('.basicLightbox').style.background = "rgba(46, 47, 66, 0.80)";
+
   modal.show();
 
   function onModalClose(e) {
