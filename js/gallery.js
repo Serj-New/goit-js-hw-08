@@ -94,14 +94,12 @@ const handleImageClick = (event) => {
   const modal = basicLightbox.create(
     `<img width="1112" height="640" src="${event.target.dataset.source}">`,
     {
-      onShow: () => {document.addEventListener('keydown', onModalClose)},
-      onClose: () => {document.removeEventListener('keydown', onModalClose)},
+      onShow: () => document.addEventListener('keydown', onModalClose),
+      onClose: () => document.removeEventListener('keydown', onModalClose),
     },
   );
   
   modal.show();
-
-  document.querySelector('.basicLightbox').style.background = "rgba(46, 47, 66, 0.80)";
 
   function onModalClose(e) {
     if (e.code === 'Escape') {

@@ -21,13 +21,6 @@ body {
   gap: 24px;
 }
 
-.gallery-item {
-}
-
-.gallery-link {
-
-}
-
 .gallery-image {
   display: block;
   width: 360px;
@@ -37,4 +30,8 @@ body {
 
 .gallery-image:hover {
   transform: scale(1.04);
+}
+
+.basicLightbox {
+  background: rgba(46, 47, 66, 0.80);
 }
